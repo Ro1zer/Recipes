@@ -78,14 +78,14 @@ fun DishCardItem(
                     style = MaterialTheme.typography.bodyLarge,
                     textAlign = TextAlign.Justify
                 )
-                Spacer(Modifier.height(dimensionResource(R.dimen.padding_super_large)))
+                Spacer(Modifier.height(dimensionResource(R.dimen.padding_extra_large)))
                 Text(
                     text = dish.timeEstimate,
                     style = MaterialTheme.typography.bodyMedium
                 )
                 Spacer(Modifier.height(dimensionResource(R.dimen.padding_medium)))
                 OutlinedButton(
-                    onClick = { /*TODO:*/ },
+                    onClick = { /*TODO: (1)*/ },
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(
@@ -112,12 +112,7 @@ fun DishCardItemLightThemePreview() {
         dynamicColor = false
     ) {
         DishCardItem(
-            dish = Dish(
-                name = "Пікантний салатик до шашличку",
-                description = "Ще один ніжний салат з моєї колекції. Поєднання солодкого винограду, чері, моцарелли і пікантної заправки! І готується за лічені хвилини.",
-                image = R.drawable.recipe_2,
-                timeEstimate = "30 хвилин"
-            )
+            dish = DishesRepository.dishes.last()
         )
     }
 }
@@ -132,12 +127,7 @@ fun DishCardItemBlackThemePreview() {
         dynamicColor = false
     ) {
         DishCardItem(
-            dish = Dish(
-                name = "Пікантний салатик до шашличку",
-                description = "Ще один ніжний салат з моєї колекції. Поєднання солодкого винограду, чері, моцарелли і пікантної заправки! І готується за лічені хвилини.",
-                image = R.drawable.recipe_2,
-                timeEstimate = "30 хвилин"
-            )
+            dish = DishesRepository.dishes.first()
         )
     }
 }

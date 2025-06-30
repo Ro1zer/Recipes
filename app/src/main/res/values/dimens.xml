@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="padding_super_large">40dp</dimen>
+    <dimen name="padding_extra_large">40dp</dimen>
     <dimen name="padding_large">24dp</dimen>
     <dimen name="padding_medium">16dp</dimen>
     <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_extra_small">6dp</dimen>
+    <dimen name="padding_extra_extra_small">4dp</dimen>
+    <dimen name="item_size">40dp</dimen>
 </resources>
