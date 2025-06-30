@@ -11,6 +11,7 @@ import com.example.recipes.R
 
 val Montserrat = FontFamily(
     Font(R.font.montserrat_regular, FontWeight.Normal),
+    Font(R.font.montserrat_bold, FontWeight.Bold),
 )
 
 val PlayfairDisplay = FontFamily(
@@ -26,6 +27,11 @@ val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = Montserrat,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        fontSize = 14.sp
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.Bold,
+        fontSize = 12.sp
     )
 )
